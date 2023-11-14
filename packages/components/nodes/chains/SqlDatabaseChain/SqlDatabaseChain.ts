@@ -198,7 +198,10 @@ const getSQLDBChain = async (
               }
             : ({
                   type: databaseType,
-                  url: url
+                  url: url,
+                  options: {
+                      trustServerCertificate: true
+                  }
               } as DataSourceOptions)
     )
 
